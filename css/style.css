@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
+@import url(//fonts.googleapis.com/earlyaccess/hannari.css);
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day');
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+.fa {
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+a {color: black;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;color: darkgray;}
+a:active {text-decoration: none;}
+
+img {
+    max-width: 100%;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+}
+
+.nav-item {
+    padding: 5px 10px 5px 10px;
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "header header" "nav article" "footer footer";
+    grid-template-rows: 70px 1fr 60px;
+    grid-template-columns: 200px 70%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', 'Kokoro', 'Hannari', serif;
+}
+
+header,
+article {
+    padding: 1.2em 1.2em 0 1.2em;
+}
+
+article,h2 {
+    font-family: 'Lato', 'Noto Sans Japanese', serif!important;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+footer {
+	padding: 1.2em;
+}
+
+nav {
+    padding: 0;
+    font-weight: 100;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#siteAds {
+    grid-area: ads;
+}
+
+.logo {
+    font-family: Dawning of a New Day;
+    font-size: 32px;
+}
+
+footer {
+    font-size: 9px;
+    text-align: right;
+}
+
+
+/* Stack the layout on small devices/viewports. */
+
+@media all and (max-width: 575px) {
+body {
+    grid-template-areas: "header" "nav" "article" "footer";
+    grid-template-rows: 70px 50px 1fr 60px;
+    grid-template-columns: 1fr;
+}
+.logo {
+    font-family: Dawning of a New Day;
+    font-size: 36px;
+}
+.header {
+    padding-top: 0.6em!important;
+    width: 95%!important;
+}
+.nav-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    }
+}
