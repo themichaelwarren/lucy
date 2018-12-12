@@ -136,6 +136,7 @@ menu {
 
 article p,
 article h3,
+article h4,
 article form {
     margin: 1em;
 }
@@ -189,7 +190,7 @@ article form {
 
 .navbar a.title:hover {
     background: #fff;
-    color: tomato;
+    opacity: 75%;
 }
 
 .navbar .icon {
