@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&subset=japanese');
 
-input, textarea {
-    font-size: initial;
-}
-
 .fa {
     padding: 10px 10px 0px 10px;
     font-size: 20px;
