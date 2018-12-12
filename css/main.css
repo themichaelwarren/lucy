@@ -8,9 +8,8 @@
     text-decoration: none!important;
 }
 
-.logo img {
-    width: 200px !important;
-    padding-bottom: 3px;
+.logo {
+    color: cornflowerblue;
 }
 
 .img {
