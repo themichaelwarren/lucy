@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&subset=japanese');
+
+.logo img {
+    width: 200px !important;
+    padding-bottom: 3px;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.box {
+    display: inline-block;
+    padding: 3px 9px;
+    border: 0;
+    border-radius: 0.317rem;
+    color: #fff;
+    background-color: black;
+    color: white;
+    border-bottom: 0px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.button {
+    display: inline-block;
+    margin: 0 0 0 1em;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 0.317rem;
+    color: #fff;
+    background-color: #1fa3ec;
+    color: white !important;
+    border-bottom: 0px !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.button:hover {
+    opacity: 0.85;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p>a {
+    color: tomato;
+}
+
+p>a:link {
+    text-decoration: none;
+}
+
+p>a:visited {
+    text-decoration: none;
+}
+
+p>a:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+p>a:active {
+    text-decoration: none;
+}
+
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "nav nav""article article""footer footer";
+    grid-template-rows: 70px auto auto;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Sans Japanese', sans-serif !important;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    margin: 1em;
+}
+
+footer {
+    font-size: 10px;
+    padding: 2em;
+}
+
+article,
+h2,
+page,
+nav,
+menu {
+    font-family: 'Noto Sans Japanese', sans-serif !important;
+    line-height: 1.6;
+}
+
+article p,
+article h3,
+article form {
+    margin: 1em;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+.navbar {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: left;
+    margin: 2em 0em 2em 2em;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: tomato;
+    border-bottom: 0px;
+}
+
+.navbar a.active {
+    color: tomato;
+}
+
+.navbar a.title:hover {
+    background: #fff;
+    color: #000;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+
+@media all and (max-width: 600px) {
+
+    .logo img {
+        padding-top: 5px;
+    }
+
+    body {
+        grid-template-areas: "menu""article""nav""footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        width: 100%;
+        margin: 0px;
+        padding: 1em;
+        border-top: 1px solid black;
+    }
+
+    .navbar a:hover {
+        color: tomato;
+    }
+
+    .navbar a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .navbar a.title {
+        border-top: 0px !important;
+    }
+
+    .index .navbar a.title {
+        display: none !important;
+    }
+
+    article {
+        margin: 0 0 1em 0;
+    }
+
+    .menu {
+        font-weight: 700;
+        margin: 1em;
+        font-size: 24px;
+        margin-left: auto;
+        display: flex;
+    }
+
+    .page {
+        font-family: 'Noto Sans Japanese', sans-serif !important;
+        float: left;
+        position: absolute;
+        left: 1em;
+        font-size: 24px;
+    }
+
+}
