@@ -174,9 +174,14 @@ article form {
     color: tomato;
 }
 
+.navbar a.title {
+    background: #fff;
+    color: cornflowerblue;
+}
+
 .navbar a.title:hover {
     background: #fff;
-    color: #000;
+    color: salmon;
 }
 
 .navbar .icon {
