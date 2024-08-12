@@ -37,7 +37,7 @@
 input.button,
 a.button {
     display: inline-block;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 0em;
     padding: 8px 20px;
     border: 0;
     border-radius: 0.317rem;
